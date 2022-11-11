@@ -12,12 +12,10 @@ function wrapGifts(gifts) {
 function writeCards(people, eventType) {
     const cards= [];
     let message; 
-    
     for (let i = 0; i < people.length; i++) {
         message = `Thank you, ${people[i]}, for the wonderful ${eventType} gift!`;
-        cards.push(message);
     }
-    
+    cards.push(message);
     return cards;
 }
 

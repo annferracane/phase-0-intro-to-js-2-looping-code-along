@@ -10,19 +10,15 @@ function wrapGifts(gifts) {
 }
 
 function writeCards(people, eventType) {
-    const cards= [];
     let message; 
-    
     for (let i = 0; i < people.length; i++) {
-        message = `Thank you, ${people[i]}, for the wonderful ${eventType} gift!`;
-        cards.push(message);
+        message = `Thank you, ${people.name}, for the wonderful ${eventType} gift!`;
     }
-    
-    return cards;
+    return message;
 }
 
 function countDown(num) {
-    let n = Math.abs(num);
+    n = Math.abs(num);
 
     while (n >= 0) {
         console.log(n);
